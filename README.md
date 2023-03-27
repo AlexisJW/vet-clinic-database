@@ -1,28 +1,3 @@
-<a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Schema
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -38,7 +13,6 @@ After you're finished please remove all the comments and instructions!
     - [Connect to your PostgreSQL server with psql](#connect-to-your-postgresql-server-with-psql)
     - [Create the database](#create-the-database)
     - [Connect to the database](#connect-to-the-database)
-  - [📄 Schema ](#-schema-)
   - [👥 Authors ](#-authors-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -66,11 +40,13 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **CREATE DATABASE**
-- **INSERT ANIMALS**
-- **QUERY ANIMALS**
-- **ALTER TABLES**
-- **TRANSACTIONS**
+- **CREATE DATABASE vet_clinic**
+- **CREATE ANIMALS TABLE**
+- **QUERY AND UPDATE ANIMALS TABLE**
+- **QUERY MULTIPLE TABLES**
+- **ADD JOIN TABLE FOR VISITS**
+- **DATABASE PERFORMENCE AUDIT**
+- **ASS DATABASE SCHEMA DIAGRAM**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,11 +68,8 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 Example commands:
-
-```
-  git clone [git@github.com:Reem-lab/vet-clinic-database.git](https://github.com/didierganthier/vet-clinic-database.git)
+  git clone https://github.com/AlexisJW/vet-clinic-database.git
   cd vet-clinic-database
-```
 
 ### Connect to your PostgreSQL server with psql
     
@@ -118,13 +91,9 @@ Example commands:
 
 - Use [schema.sql](./schema.sql) to create all tables.
 - Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- Check [queries.sql](./queries.sql)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Schema <a name="schema"></a>
-![Screenshot 2022-12-13 at 11 28 36](https://user-images.githubusercontent.com/45739963/207389813-cc254ad7-9439-49eb-bb4c-00d3e4409453.png)
-
 
 <!-- AUTHORS -->
 
@@ -132,9 +101,8 @@ Example commands:
 
 👤 **Didier Peran Ganthier**
 
-- GitHub: [@didierganthier](https://github.com/didierganthier)
-- Twitter: [@didierganthier_](https://twitter.com/didierganthier_)
-- LinkedIn: [Didier Peran Ganthier](https://linkedin.com/in/didierganthier)
+- GitHub: [@AlexisJW](https://github.com/AlexisJW)
+- LinkedIn: [Jean Walner Alexis](https://linkedin.com/in/jean-walner-alexis)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -169,7 +137,5 @@ If you like this project, please give it a ⭐️!
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
