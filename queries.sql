@@ -63,3 +63,5 @@ SELECT COUNT(*) FROM animals JOIN species ON animals.species_id = species.id GRO
 SELECT * FROM animals JOIN owners ON animals.owner_id = owners.id
 JOIN species ON animals.species_id = species.id
 WHERE owners.full_name = 'Jennifer Orwell' AND species.name = 'Digimon';
+SELECT * FROM animals JOIN owners ON animals.owner_id = owners.id
+WHERE owners.full_name = 'Dean Winchester' AND animals.escape_attempts = 0;
