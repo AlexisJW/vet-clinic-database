@@ -26,3 +26,5 @@ VALUES ('Sam Smith', 34),
 INSERT INTO species (name)
 VALUES ('Pokemon'),
        ('Digimon');
+
+UPDATE animals SET owner_id = 1 WHERE name = 'Agumon';
