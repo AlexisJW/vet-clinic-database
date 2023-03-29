@@ -59,3 +59,4 @@ SELECT AVG(escape_attempts), species FROM animals WHERE date_of_birth BETWEEN '1
 SELECT * FROM animals JOIN owners ON animals.owner_id = owners.id WHERE owners.full_name = 'Melody Pond';
 SELECT * FROM animals JOIN species ON animals.species_id = species.id WHERE species.name = 'Pokemon';
 SELECT * FROM owners LEFT JOIN animals ON owners.id = animals.owner_id;
+SELECT COUNT(*) FROM animals JOIN species ON animals.species_id = species.id GROUP BY species.name;
