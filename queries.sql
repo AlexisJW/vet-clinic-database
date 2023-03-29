@@ -60,3 +60,6 @@ SELECT * FROM animals JOIN owners ON animals.owner_id = owners.id WHERE owners.f
 SELECT * FROM animals JOIN species ON animals.species_id = species.id WHERE species.name = 'Pokemon';
 SELECT * FROM owners LEFT JOIN animals ON owners.id = animals.owner_id;
 SELECT COUNT(*) FROM animals JOIN species ON animals.species_id = species.id GROUP BY species.name;
+SELECT * FROM animals JOIN owners ON animals.owner_id = owners.id
+JOIN species ON animals.species_id = species.id
+WHERE owners.full_name = 'Jennifer Orwell' AND species.name = 'Digimon';
