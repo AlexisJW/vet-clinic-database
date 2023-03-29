@@ -28,3 +28,4 @@ VALUES ('Pokemon'),
        ('Digimon');
 
 UPDATE animals SET owner_id = 1 WHERE name = 'Agumon';
+UPDATE animals SET owner_id = 2 WHERE name = 'Gabumon' OR name = 'Pikachu';
