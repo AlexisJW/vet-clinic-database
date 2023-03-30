@@ -105,3 +105,34 @@ JOIN animals ON visits.animal_id = animals.id
 GROUP BY animals.name
 ORDER BY visit_count DESC
 LIMIT 1;
+
+SELECT * FROM visits
+JOIN animals ON visits.animal_id = animals.id
+JOIN vets ON visits.vet_id = vets.id
+JOIN owners ON visits.vet_id = owners.id
+WHERE owners.full_name = 'Maisy Smith'
+ORDER BY visits.date_of_visit ASC
+LIMIT 1;
+
+SELECT animals.name, vets.name, visits.date_of_visit FROM visits
+JOIN animals ON visits.animal_id = animals.id
+JOIN vets ON visits.vet_id = vets.id
+ORDER BY visits.date_of_visit DESC
+LIMIT 1;
+
+SELECT COUNT(visits.animal_id)
+FROM visits
+JOIN vets ON visits.vet_id = vets.id
+JOIN specializations ON specializations.species_id = vets.id
+WHERE specializations.species_id IS NULL;
+
+SELECT species.name, COUNT(visits.animal_id) AS visit_count FROM visits
+JOIN animals ON visits.animal_id = animals.id
+JOIN vets ON visits.vet_id = vets.id
+JOIN owners ON visits.vet_id = owners.id
+JOIN specializations ON specializations.species_id = vets.id
+JOIN species ON specializations.species_id = species.id
+WHERE owners.full_name = 'Maisy Smith'
+GROUP BY species.name
+ORDER BY visit_count DESC
+LIMIT 1;
