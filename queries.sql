@@ -84,3 +84,8 @@ JOIN vets ON visits.vet_id = vets.id
 WHERE vets.name = 'William Tatcher'
 ORDER BY visits.date_of_visit DESC
 LIMIT 1;
+
+SELECT COUNT(DISTINCT animals.id) FROM visits
+JOIN animals ON visits.animal_id = animals.id
+JOIN owners ON visits.vet_id = owners.id
+WHERE owners.full_name = 'Stephanie Mendez';
