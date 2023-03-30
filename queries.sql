@@ -89,3 +89,7 @@ SELECT COUNT(DISTINCT animals.id) FROM visits
 JOIN animals ON visits.animal_id = animals.id
 JOIN owners ON visits.vet_id = owners.id
 WHERE owners.full_name = 'Stephanie Mendez';
+
+SELECT *
+FROM vets
+JOIN specializations ON vets.id = specializations.vet_id;
